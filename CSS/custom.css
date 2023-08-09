@@ -1,0 +1,367 @@
+/* Top Bar Style */
+.top-bar .page-interval{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-top);
+  color: #333;
+  font-size: var(--fs-small);
+  font-weight: 300;
+}
+
+.top-bar .company-info{
+  padding:0.875rem 0;
+}
+
+.top-bar .company-info span{
+  position: relative;
+  padding-right: .5rem;
+  margin-right: .5rem;
+}
+
+.top-bar .company-info span:after{
+  content: '';
+  width: 1px;
+  height: 50%;
+  background: #333;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Navigation Style*/
+nav{
+  width: 100%;
+  height: auto;
+  padding: 1.125rem 0;
+  border-bottom: 1px solid #efefef;
+}
+
+nav .page-interval{
+  display:flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav .navi{
+  display: flex;
+  column-gap: 2.375rem;
+}
+
+nav .navi a{
+  font-size: var(--fs-nav);
+  text-transform: uppercase; /*대문자, capitalize: 첫 글자 대문자, lowercase; 소문자 */
+  font-weight: 400;
+}
+
+nav .logo{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+
+nav .cart{
+  position: relative;
+}
+
+nav .cart em{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  font-size:.625rem;
+  color: #fff;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  top: -5px;
+  right: -5px;
+}
+
+/* hero section style */
+.hero .page-interval{
+  display: flex;
+}
+
+.hero .page-interval > div{
+  width: 50%;
+  background: var(--color-hero);
+  position: relative;
+}
+
+.hero  .left-box > img{
+  position: absolute;
+}
+
+.hero  .left-box > img:nth-child(1){
+  left: 55px;
+  top: 55px;
+}
+.hero  .left-box >  img:nth-child(2){
+  left: 22px;
+  top: 55px;
+}
+.hero  .left-box > img:nth-child(3){
+  bottom:25%;
+  right: -3px;
+}
+
+.hero .hero-text-box{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero .hero-text-box strong{
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 150%;
+ }
+ 
+ .hero .hero-text-box h1{
+  color: #000;
+  margin-top: 0;
+  margin-bottom: .625rem;
+  font-size: var(--fs-big);
+  font-weight: 400;
+  line-height: 150%;
+ }
+ 
+ .hero .hero-text-box em{
+  color: #333;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 150%;
+ }
+ 
+.hero .page-interval .right-box > img{
+  width: 100%;
+}
+
+/* story section style */
+.story .story-text{
+  color: #333;
+  text-align: center;
+  margin: 60px 0;
+  font-size: var(--fs-middle);
+  font-weight: 200;
+  line-height: 150%;
+ }
+ 
+ .story .story-image-box{
+
+  display: flex;
+  justify-content: space-between;
+ }
+ 
+ .story .story-image-box > div{
+  width: 45%;
+  position: relative;
+ }
+
+ .story .story-image-box .line{
+  width: 100%;
+  height: 100px;
+  border-left: 1px solid #d9d9dd;
+  margin-bottom: 3.125rem;
+ }
+
+ .story .story-right p{
+  font-size: 1.25rem;
+  font-weight: 200;
+  line-height: 150%;
+  margin: 1.875rem 0;
+ }
+
+ .story .button-box{
+  justify-content: flex-start;
+ }
+ .story .story-image-box > div > img{
+  width: 100%;
+ }
+
+ .story .story-left > img{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+ }
+ 
+ /*best section style*/
+ .best .best-products-box,
+ .latest .latest-products-box{
+  display: flex;
+  column-gap: 1rem;
+ }
+
+ .best .best-product-list img,
+ .latest .latest-product-list img{
+  width: 100%;
+  transition: all .4s;
+ }
+
+ .best .best-image,
+ .latest .latest-image{
+  overflow: hidden;
+ }
+
+ .best .best-product-list:hover img,
+ .latest .latest-product-list:hover img{
+  transform: scale(1.05);
+ } 
+
+.best .best-product-info,
+.latest .latest-product-info{
+  width: 100%;
+  text-align: center;
+  margin-top: .9375rem;
+ }
+
+.best .best-product-info h4,
+.latest .latest-product-info h4{
+  margin-bottom: .35rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+ }
+
+ .best .best-product-info p,
+ .latest .latest-product-info p{
+  color: #333;
+  font-size: .875rem;
+  font-weight: 400;
+ }
+
+ /* latest section not commonelement */
+ .latest .latest-products-box{
+  flex-wrap: wrap;
+  row-gap: 3.125rem;
+ }
+
+ .latest .latest-product-list{
+  width:calc(25% - .75rem);
+ }
+
+ /* Featured section */
+ .featured{
+  width: 100%;
+  height: auto;
+  background: var(--color-top);
+  margin: var(--el-section) 0;
+ }
+
+ .featured .featured-box{
+  display: flex;
+  justify-content: space-between;
+  padding: 7.5rem 0;
+ }
+
+ .featured  .featured-list{
+  display: flex;
+  column-gap: .9375rem;
+  align-items: center;
+ }
+
+ .featured .featured-text p{
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%; 
+ }
+
+ .featured .featured-text em{
+  color: #333;
+  font-size: .875rem;
+  font-weight: 300;
+  line-height: 150%;
+ }
+
+ /* join section style */
+ .join{
+  width: 100%;
+  background: var(--color-hero);
+  padding: 5rem 0;
+  margin: var(--el-section) 0;
+ }
+
+ .join .wide-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .join .join-left-box,
+ .join .join-right-box{
+  width: 45%;
+ }
+ 
+ .join .join-left-box img{
+  width: 100%;
+ }
+
+ .join .line{
+  width: 1px;
+  height: 360px;
+  background: #ede4d2;
+ }
+
+ .join  .join-right-box{
+  text-align: center;
+ }
+
+ .join .join-right-box h3{
+  color: #000;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 150%;
+ }
+ 
+ 
+ .join .join-right-box p{
+  color: #333;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 150%;
+ }
+
+.join form{
+  margin-top:2.5rem;
+  width:100%;
+  display:flex;
+  border-bottom:1px solid #000;
+  justify-content: space-between;
+  padding:.5rem 0;
+ }
+ 
+ .join form input{
+  border:none;
+  background:none;
+  width:100%;
+  outline:0;
+ }
+ 
+ .join form button{
+  border:none;
+  background:none;
+  outline:0;
+ }
+ 
+ .join form input::placeholder{
+  color:#333;
+  font-family: 'Outfit', sans-serif;
+ }
+ 
+ 
+ 
+ 
