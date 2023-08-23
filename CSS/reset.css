@@ -11,6 +11,7 @@
 html, body{
  background: #fff;
  font-family: 'Outfit', sans-serif;
+ font-size:100%;
 }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
@@ -40,9 +41,9 @@ a, i, b, strong, em{
 }
 
 a{
-  font-size: inherit;
-  color: inherit;
-  font-weight: inherit;
+  font-size:inherit;
+  color:inherit;
+  font-weight:inherit;
 }
 
 
